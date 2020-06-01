@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bell {
+    font-size: 60px;
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    border: 7px solid royalblue;
+    border-radius: 50%;
+    color: royalblue;
+    text-align: center;
+    line-height: 80px;
+    right: 50px;
+    bottom: 50px;
+}
+
+.bell:hover {
+    background-color: royalblue;
+}
+
+.bell:hover i {
+    color: red;
+    cursor: pointer;
+    animation-duration: 0s;
+
+}
+
+.bell i {
+    animation: ring .2s linear infinite alternate;
+    transform-origin: 50% 0%;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
